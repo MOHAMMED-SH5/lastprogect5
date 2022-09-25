@@ -1,0 +1,83 @@
+:root 
+{
+  --navlinkmain-color:#989898;
+}
+// app style
+.logo
+{
+    width:70%;
+}
+.link
+{
+    color: var(--navlinkmain-color);
+    text-decoration: none;
+}
+.navbar-expand-md .navbar-nav .nav-link
+{
+    color: var(--navlinkmain-color);
+}
+.navbar-nav .show > .nav-link, .navbar-nav .nav-link.active
+{
+    color: var(--navlink-color) !important;
+}
+
+.navbar-toggler
+{
+    border-color: darkred !important;
+}
+
+// one sec style
+.allsec
+{
+    background-color: #f7f7f7;
+}
+.twoboxes
+{
+    padding-top: 5%;
+}
+.se-one
+{
+    background-color:white;
+    border-radius: 2px;
+}
+.img-man
+{
+    border-radius: 50%;
+}
+.welcome
+{
+    color: #2f4986;
+    font-size:25px;
+    font-weight: bold;
+}
+.haneen
+{
+    color: #f96767;
+    font-size:20px;
+}
+.link-secone-tittel
+{
+    display: flex;
+    text-decoration: none;
+    color: black;
+    font-size:18px;  
+    padding-top: 4px;
+}
+.link-secone
+{
+    display: flex;
+    text-decoration: none;
+    color: var(--navlinkmain-color);
+    font-size:16px;
+    padding-top: 4px;
+}
+// two sec style
+.se-two
+{
+    @extend .se-one;
+}
+.Dashbord
+{
+    color: #2f4986;
+    
+}
