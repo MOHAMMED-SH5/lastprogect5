@@ -2,6 +2,10 @@
   --navlinkmain-color:#989898;
 }
 
+@font-face {
+  font-family: IBMPlexSans;
+  src: url("/src/assets//fonts/IBM_Plex_Sans/IBMPlexSans-SemiBoldItalic.ttf");
+}
 .logo {
   width: 70%;
 }
@@ -21,6 +25,11 @@
 
 .navbar-toggler {
   border-color: darkred !important;
+}
+
+.navbar-toggler-icon {
+  background-image: none;
+  background-image: url("/src//assets/img/navitem.png") !important;
 }
 
 .allsec {
@@ -69,4 +78,34 @@
 
 .Dashbord {
   color: #2f4986;
+}
+
+.allbox, .boxthree, .boxtwo, .boxone {
+  background-color: #fbfbfb;
+  color: black;
+  border-radius: 7px;
+  background-position-x: right;
+  background-repeat: no-repeat;
+}
+
+.fa-users {
+  color: #faefef;
+  font-size: 80px;
+}
+
+.Total {
+  color: #aba9a9;
+  font-size: 20px;
+  margin-bottom: 0px !important;
+}
+
+.number {
+  color: #2f4986;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.fa-message-minus {
+  color: red;
+  font-size: 80px;
 }/*# sourceMappingURL=style.css.map */

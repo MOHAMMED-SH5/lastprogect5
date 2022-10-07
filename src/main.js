@@ -16,7 +16,6 @@ Vue.use(IconsPlugin)
 import { ValidationObserver, ValidationProvider, extend, localize } from 'vee-validate';
 import en from 'vee-validate/dist/locale/en.json';
 import * as rules from 'vee-validate/dist/rules';
-import i18n from './i18n'
 Object.keys(rules).forEach(rule => {
   extend(rule, rules[rule]);
 });
@@ -24,12 +23,16 @@ localize('en', en);
 Vue.component('ValidationObserver', ValidationObserver);
 Vue.component('ValidationProvider', ValidationProvider);
 
+import i18n from './i18n'
+import store from './store'
 Vue.config.productionTip = false;
+
 
 
 
 new Vue({
   router,
   i18n,
+  store,
   render: h => h(App)
 }).$mount('#app')
